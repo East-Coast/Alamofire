@@ -95,7 +95,7 @@ public enum AFError: Error {
     case sessionDeinitialized
     case sessionInvaildated(error: Error)
     case explicitlyCancelled
-    //case invalidURL(url: )
+    case invalidURL(url: URLCovertible)
     case parameterEncodingFailed(reason: ParameterEncodingFailureReason)
     case parameterEncoderFailed(reason: ParameterEncoderFailureReason)
     case multipartEncodingFailed(reason: MultipartEncodingFailureReason)
@@ -130,11 +130,11 @@ extension AFError {
         if case .explicitlyCancelled = self { return true }
         return false
     }
-    // TODO: isInvalidURLError
-//    public var isInvalidURLError: Bool {
-//        if case .invalidURL = self { return true }
-//        return false
-//    }
+
+    public var isInvalidURLError: Bool {
+        if case .invalidURL = self { return true }
+        return false
+    }
 
     public var isParameterEncodingError: Bool {
         if case .parameterEncodingFailed = self { return true }
@@ -181,7 +181,10 @@ extension AFError {
 
 extension AFError {
 
-    //TODO: urlConvertible
+    public var urlConvertible: URLCovertible? {
+        guard case .invalidURL(let url) = self else { return nil }
+        return url
+    }
 
     public var url: URL? {
         guard case .multipartEncodingFailed(let reason) = self else { return nil }
@@ -230,7 +233,6 @@ extension AFError {
         return reason.failedStringEncoding
     }
 }
-
 
 extension AFError.ParameterEncodingFailureReason {
 

@@ -15,6 +15,11 @@
 		7A5465CB2280565C00277F7F /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5465CA2280565C00277F7F /* AlamofireExtended.swift */; };
 		7A5465CD2280591100277F7F /* AFResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5465CC2280591100277F7F /* AFResult.swift */; };
 		7A5465CF22805F0500277F7F /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5465CE22805F0500277F7F /* AFError.swift */; };
+		7A5465D32282819200277F7F /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5465D22282819200277F7F /* HTTPHeaders.swift */; };
+		7A5465D52282EFEC00277F7F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5465D42282EFEC00277F7F /* Session.swift */; };
+		7A5465D72282F7B100277F7F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5465D62282F7B100277F7F /* HTTPMethod.swift */; };
+		7A5465D92282F8C500277F7F /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5465D82282F8C500277F7F /* URLConvertible+URLRequestConvertible.swift */; };
+		7A5465DD2283CAE600277F7F /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5465DC2283CAE600277F7F /* ParameterEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		7A5465CA2280565C00277F7F /* AlamofireExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtended.swift; sourceTree = "<group>"; };
 		7A5465CC2280591100277F7F /* AFResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFResult.swift; sourceTree = "<group>"; };
 		7A5465CE22805F0500277F7F /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		7A5465D22282819200277F7F /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		7A5465D42282EFEC00277F7F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		7A5465D62282F7B100277F7F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		7A5465D82282F8C500277F7F /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		7A5465DC2283CAE600277F7F /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,11 @@
 				7A5465CA2280565C00277F7F /* AlamofireExtended.swift */,
 				7A5465CC2280591100277F7F /* AFResult.swift */,
 				7A5465CE22805F0500277F7F /* AFError.swift */,
+				7A5465D22282819200277F7F /* HTTPHeaders.swift */,
+				7A5465D62282F7B100277F7F /* HTTPMethod.swift */,
+				7A5465D82282F8C500277F7F /* URLConvertible+URLRequestConvertible.swift */,
+				7A5465DC2283CAE600277F7F /* ParameterEncoder.swift */,
+				7A5465D42282EFEC00277F7F /* Session.swift */,
 			);
 			path = Alamofire;
 			sourceTree = "<group>";
@@ -152,10 +167,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A5465D52282EFEC00277F7F /* Session.swift in Sources */,
+				7A5465D92282F8C500277F7F /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				7A5465D32282819200277F7F /* HTTPHeaders.swift in Sources */,
 				7A5465BA228055F500277F7F /* ViewController.swift in Sources */,
 				7A5465B8228055F500277F7F /* AppDelegate.swift in Sources */,
+				7A5465D72282F7B100277F7F /* HTTPMethod.swift in Sources */,
 				7A5465CF22805F0500277F7F /* AFError.swift in Sources */,
 				7A5465CB2280565C00277F7F /* AlamofireExtended.swift in Sources */,
+				7A5465DD2283CAE600277F7F /* ParameterEncoder.swift in Sources */,
 				7A5465CD2280591100277F7F /* AFResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
